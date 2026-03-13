@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    text-align:center;
+}
+
+/* Birthday Card */
+.card{
+    background:white;
+    width:400px;
+    margin:120px auto;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h1{
+    color:#ff4081;
+    font-size:45px;
+}
+
+/* Message */
+p{
+    font-size:20px;
+    color:#555;
+}
+
+/* Name Style */
+.name{
+    color:#ff4081;
+    font-weight:bold;
+}
+
+/* Button */
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:#ff4081;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#e91e63;
+    transform:scale(1.1);
+}
+
+/* Balloons */
+.balloon{
+    font-size:40px;
+    position:absolute;
+    animation:float 6s infinite;
+}
+
+.balloon:nth-child(1){left:10%; animation-delay:0s;}
+.balloon:nth-child(2){left:30%; animation-delay:1s;}
+.balloon:nth-child(3){left:70%; animation-delay:2s;}
+.balloon:nth-child(4){left:90%; animation-delay:3s;}
+
+@keyframes float{
+    0%{top:100%;}
+    100%{top:-10%;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Balloons -->
+<div class="balloon">🎈</div>
+<div class="balloon">🎈</div>
+<div class="balloon">🎈</div>
+<div class="balloon">🎈</div>
+
+<div class="card">
+
+<h1>🎂 Happy Birthday 🎉</h1>
+
+<p>Dear <span class="name">Your Name</span>,</p>
+
+<p>May your day be filled with happiness, love, and lots of cake! 🍰</p>
+
+<button onclick="showWish()">Click for Surprise 🎁</button>
+
+</div>
+
+<script>
+
+function showWish(){
+    alert("🎉 Wishing you a fantastic birthday full of joy and success!");
+}
+
+</script>
+
+</body>
+</html>
